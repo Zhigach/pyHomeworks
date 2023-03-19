@@ -11,19 +11,16 @@
 
 
 n = int(input("Enter natural number N: "))
+arr = []
 
-strArray = input("Enter values separated by space: ")
-arr = strArray.split(" ")
-
-if n != len(arr):
-    print("Incorrect array entered")
-    quit(1)
+print("Enter values separated by newline: ")
+for i in range(n):
+    arr.append(int(input()))
 
 x = int(input("Enter number X, program will count number of X occurrences in array: "))
 
 count = 0
 for item in arr:
-    item = int(item)
     if item == x:
         count += 1
 
