@@ -6,6 +6,8 @@
 #     A = 2; B = 3 -> 8
 
 def powRecursion(base, power):
+    if power == 0:
+        return 1
     if power == 1:
         return base
     return base*powRecursion(base, power-1)
